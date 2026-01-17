@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROG Raikiri II - Gamepad Viewer Preview</title>
+    <link rel="stylesheet" href="raikiri-ii.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background: #0a0a0a;
+            font-family: Arial, sans-serif;
+            color: #fff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            color: #ff0066;
+            text-shadow: 0 0 10px rgba(255, 0, 102, 0.5);
+        }
+        .preview {
+            width: 100%;
+            max-width: 800px;
+            margin: 40px auto;
+            aspect-ratio: 16 / 9;
+            position: relative;
+        }
+        .info {
+            background: #1a1a1a;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            border: 2px solid #ff0066;
+        }
+        code {
+            background: #2a2a2a;
+            padding: 2px 6px;
+            border-radius: 3px;
+            color: #ff0066;
+        }
+        .button-demo {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        .demo-btn {
+            padding: 10px 20px;
+            background: #2a2a2a;
+            border: 2px solid #ff0066;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .demo-btn:hover {
+            background: #ff0066;
+            box-shadow: 0 0 10px rgba(255, 0, 102, 0.8);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎮 ASUS ROG Raikiri II - Gamepad Viewer Skin</h1>
+        
+        <div class="preview">
+            <div class="controller custom">
+                <!-- Triggers -->
+                <div class="triggers">
+                    <div class="trigger left"></div>
+                    <div class="trigger right"></div>
+                </div>
+                
+                <!-- Bumpers -->
+                <div class="bumpers">
+                    <div class="bumper left"></div>
+                    <div class="bumper right"></div>
+                </div>
+                
+                <!-- D-Pad -->
+                <div class="dpad">
+                    <div class="face up"></div>
+                    <div class="face down"></div>
+                    <div class="face left"></div>
+                    <div class="face right"></div>
+                </div>
+                
+                <!-- ABXY Buttons -->
+                <div class="abxy">
+                    <div class="button a"></div>
+                    <div class="button b"></div>
+                    <div class="button x"></div>
+                    <div class="button y"></div>
+                </div>
+                
+                <!-- View/Menu -->
+                <div class="arrows">
+                    <div class="back"></div>
+                    <div class="start"></div>
+                </div>
+                
+                <!-- Analog Sticks -->
+                <div class="sticks">
+                    <div class="stick left"></div>
+                    <div class="stick right"></div>
+                </div>
+                
+                <!-- Xbox Logo -->
+                <div class="meta"></div>
+                
+                <!-- ROG Logo -->
+                <div class="touchpad"></div>
+                
+                <!-- Player Indicator -->
+                <div class="quadrant p0"></div>
+            </div>
+        </div>
+        
+        <div class="info">
+            <h2>📋 Quick Setup</h2>
+            <ol>
+                <li>Push this repository to GitHub (see SETUP_INSTRUCTIONS.md)</li>
+                <li>Copy this URL (replace YOUR-USERNAME):
+                    <br><code>https://raw.githubusercontent.com/YOUR-USERNAME/ghost-raikiri/main/raikiri-ii.css</code>
+                </li>
+                <li>Go to <a href="https://gamepadviewer.com/" target="_blank" style="color: #ff0066;">gamepadviewer.com</a></li>
+                <li>Click settings and paste the CSS URL</li>
+                <li>Connect your ROG Raikiri II controller!</li>
+            </ol>
+            
+            <h3>✨ Features</h3>
+            <ul>
+                <li>Premium black design with ROG pink accents</li>
+                <li>All buttons glow pink when pressed</li>
+                <li>RGB player indicator lighting</li>
+                <li>Textured grip visual effects</li>
+                <li>Authentic button colors (Xbox standard)</li>
+                <li>Disconnected state visualization</li>
+            </ul>
+            
+            <div class="button-demo">
+                <button class="demo-btn" onclick="togglePressed('.trigger.left')">L2</button>
+                <button class="demo-btn" onclick="togglePressed('.trigger.right')">R2</button>
+                <button class="demo-btn" onclick="togglePressed('.bumper.left')">L1</button>
+                <button class="demo-btn" onclick="togglePressed('.bumper.right')">R1</button>
+                <button class="demo-btn" onclick="togglePressed('.button.a')">A</button>
+                <button class="demo-btn" onclick="togglePressed('.button.b')">B</button>
+                <button class="demo-btn" onclick="togglePressed('.button.x')">X</button>
+                <button class="demo-btn" onclick="togglePressed('.button.y')">Y</button>
+                <button class="demo-btn" onclick="togglePressed('.meta')">Xbox</button>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function togglePressed(selector) {
+            const element = document.querySelector(selector);
+            if (element) {
+                element.classList.toggle('pressed');
+                setTimeout(() => {
+                    element.classList.remove('pressed');
+                }, 200);
+            }
+        }
+        
+        // Cycle through player indicators
+        let currentPlayer = 0;
+        setInterval(() => {
+            const quadrant = document.querySelector('.quadrant');
+            quadrant.className = 'quadrant p' + currentPlayer;
+            currentPlayer = (currentPlayer + 1) % 4;
+        }, 3000);
+    </script>
+</body>
+</html>
