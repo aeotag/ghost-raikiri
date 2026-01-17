@@ -8,456 +8,452 @@
  */
 
 /* Main Controller Shell */
-.custom.controller, .custom.controller::after {
-  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 50%, #1a1a1a 100%);
-  background-size: 100vw auto;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-  position: relative;
-  border-radius: 3vw;
+.controller.custom, .controller.custom::after {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 50%, #1a1a1a 100%) !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
 }
 
 /* Disconnected State */
-.custom.controller.disconnected {
-  opacity: 0.5;
-  filter: grayscale(80%);
+.controller.controller.custom.disconnected {
+  opacity: 0.5 !important;
+  filter: grayscale(80%) !important;
 }
-.custom.controller.disconnected::after {
-  content: 'DISCONNECTED';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #ff0066;
-  font-size: 3vw;
-  font-weight: bold;
-  text-shadow: 0 0 1vw rgba(255, 0, 102, 0.8);
-  opacity: 0.7;
+.controller.controller.custom.disconnected::after {
+  content: 'DISCONNECTED' !important;
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  color: #ff0066 !important;
+  font-size: 3vw !important;
+  font-weight: bold !important;
+  text-shadow: 0 0 1vw rgba(255, 0, 102, 0.8) !important;
+  opacity: 0.7 !important;
 }
 
 /* L2 & R2 Triggers */
-.custom .triggers {
-  position: absolute;
-  width: 76vw;
-  height: 12vw;
-  left: 12vw;
-  top: 0;
+.controller.controller.custom .triggers {
+  position: absolute !important;
+  width: 76vw !important;
+  height: 12vw !important;
+  left: 12vw !important;
+  top: 0 !important;
 }
 
-.custom .trigger {
-  position: absolute;
-  width: 13vw;
-  height: 11vw;
-  background: linear-gradient(180deg, #3a3a3a 0%, #2a2a2a 50%, #1a1a1a 100%);
-  border-radius: 1vw 1vw 0 0;
-  opacity: 0.3;
-  transition: opacity 0.1s;
+.controller.controller.custom .trigger {
+  position: absolute !important;
+  width: 13vw !important;
+  height: 11vw !important;
+  background: linear-gradient(180deg, #3a3a3a 0%, #2a2a2a 50%, #1a1a1a 100%) !important;
+  border-radius: 1vw 1vw 0 0 !important;
+  opacity: 0.3 !important;
+  transition: opacity 0.1s !important;
 }
 
-.custom .trigger.pressed {
-  opacity: 1;
-  background: linear-gradient(180deg, #ff0066 0%, #cc0052 50%, #990040 100%);
-  box-shadow: 0 0 2vw rgba(255, 0, 102, 0.6);
+.controller.controller.custom .trigger.pressed {
+  opacity: 1 !important;
+  background: linear-gradient(180deg, #ff0066 0%, #cc0052 50%, #990040 100%) !important;
+  box-shadow: 0 0 2vw rgba(255, 0, 102, 0.6) !important;
 }
 
-.custom .trigger.left {
-  left: 0;
-  top: 0;
+.controller.controller.custom .trigger.left {
+  left: 0 !important;
+  top: 0 !important;
 }
 
-.custom .trigger.right {
-  right: 0;
-  top: 0;
+.controller.controller.custom .trigger.right {
+  right: 0 !important;
+  top: 0 !important;
 }
 
 /* L1 & R1 Bumpers */
-.custom .bumpers {
-  position: absolute;
-  width: 76vw;
-  height: 4.5vw;
-  left: 12vw;
-  top: 11vw;
+.controller.custom .bumpers {
+  position: absolute !important;
+  width: 76vw !important;
+  height: 4.5vw !important;
+  left: 12vw !important;
+  top: 11vw !important;
 }
 
-.custom .bumper {
-  position: absolute;
-  background: linear-gradient(180deg, #4a4a4a 0%, #2a2a2a 100%);
-  border-radius: 0.8vw;
-  height: 4.5vw;
-  transition: all 0.1s;
+.controller.custom .bumper {
+  position: absolute !important;
+  background: linear-gradient(180deg, #4a4a4a 0%, #2a2a2a 100%) !important;
+  border-radius: 0.8vw !important;
+  height: 4.5vw !important;
+  transition: all 0.1s !important;
 }
 
-.custom .bumper.pressed {
-  background: linear-gradient(180deg, #ff0066 0%, #990040 100%);
-  box-shadow: 0 0 1.5vw rgba(255, 0, 102, 0.7);
+.controller.custom .bumper.pressed {
+  background: linear-gradient(180deg, #ff0066 0%, #990040 100%) !important;
+  box-shadow: 0 0 1.5vw rgba(255, 0, 102, 0.7) !important;
 }
 
-.custom .bumper.left {
-  width: 13vw;
-  left: 0;
+.controller.custom .bumper.left {
+  width: 13vw !important;
+  left: 0 !important;
 }
 
-.custom .bumper.right {
-  width: 13vw;
-  right: 0;
+.controller.custom .bumper.right {
+  width: 13vw !important;
+  right: 0 !important;
 }
 
 /* D-Pad */
-.custom .dpad {
-  position: absolute;
-  width: 14vw;
-  height: 14vw;
-  left: 15vw;
-  top: 25vw;
+.controller.custom .dpad {
+  position: absolute !important;
+  width: 14vw !important;
+  height: 14vw !important;
+  left: 15vw !important;
+  top: 25vw !important;
 }
 
-.custom .face {
-  position: absolute;
-  background: linear-gradient(135deg, #3a3a3a 0%, #2a2a2a 100%);
-  border: 0.2vw solid #1a1a1a;
-  transition: all 0.1s;
+.controller.custom .face {
+  position: absolute !important;
+  background: linear-gradient(135deg, #3a3a3a 0%, #2a2a2a 100%) !important;
+  border: 0.2vw solid #1a1a1a !important;
+  transition: all 0.1s !important;
 }
 
-.custom .face.pressed {
-  background: linear-gradient(135deg, #ff0066 0%, #990040 100%);
-  box-shadow: 0 0 1vw rgba(255, 0, 102, 0.8);
+.controller.custom .face.pressed {
+  background: linear-gradient(135deg, #ff0066 0%, #990040 100%) !important;
+  box-shadow: 0 0 1vw rgba(255, 0, 102, 0.8) !important;
 }
 
-.custom .face.up, .custom .face.down {
-  width: 4.5vw;
-  height: 6vw;
-  left: 4.75vw;
-  border-radius: 0.8vw;
+.controller.custom .face.up, .controller.custom .face.down {
+  width: 4.5vw !important;
+  height: 6vw !important;
+  left: 4.75vw !important;
+  border-radius: 0.8vw !important;
 }
 
-.custom .face.up {
-  top: 0;
+.controller.custom .face.up {
+  top: 0 !important;
 }
 
-.custom .face.down {
-  bottom: 0;
+.controller.custom .face.down {
+  bottom: 0 !important;
 }
 
-.custom .face.left, .custom .face.right {
-  width: 6vw;
-  height: 4.5vw;
-  top: 4.75vw;
-  border-radius: 0.8vw;
+.controller.custom .face.left, .controller.custom .face.right {
+  width: 6vw !important;
+  height: 4.5vw !important;
+  top: 4.75vw !important;
+  border-radius: 0.8vw !important;
 }
 
-.custom .face.left {
-  left: 0;
+.controller.custom .face.left {
+  left: 0 !important;
 }
 
-.custom .face.right {
-  right: 0;
+.controller.custom .face.right {
+  right: 0 !important;
 }
 
 /* A, B, X, Y Buttons */
-.custom .abxy {
-  position: absolute;
-  width: 14vw;
-  height: 14vw;
-  left: 71vw;
-  top: 25vw;
+.controller.custom .abxy {
+  position: absolute !important;
+  width: 14vw !important;
+  height: 14vw !important;
+  left: 71vw !important;
+  top: 25vw !important;
 }
 
-.custom .button {
-  position: absolute;
-  width: 5.5vw;
-  height: 5.5vw;
-  border-radius: 50%;
-  border: 0.3vw solid #1a1a1a;
-  font-size: 2vw;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.1s;
+.controller.custom .button {
+  position: absolute !important;
+  width: 5.5vw !important;
+  height: 5.5vw !important;
+  border-radius: 50% !important;
+  border: 0.3vw solid #1a1a1a !important;
+  font-size: 2vw !important;
+  font-weight: bold !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transition: all 0.1s !important;
 }
 
-.custom .button::after {
-  position: absolute;
-  font-family: Arial, sans-serif;
-  color: #ffffff;
-  text-shadow: 0 0 0.5vw rgba(0, 0, 0, 0.8);
+.controller.custom .button::after {
+  position: absolute !important;
+  font-family: Arial, sans-serif !important;
+  color: #ffffff !important;
+  text-shadow: 0 0 0.5vw rgba(0, 0, 0, 0.8) !important;
 }
 
-.custom .button.pressed {
-  box-shadow: 0 0 1.5vw rgba(255, 0, 102, 0.8), inset 0 0 1vw rgba(0, 0, 0, 0.5);
-  transform: scale(0.95);
+.controller.custom .button.pressed {
+  box-shadow: 0 0 1.5vw rgba(255, 0, 102, 0.8), inset 0 0 1vw rgba(0, 0, 0, 0.5) !important;
+  transform: scale(0.95) !important;
 }
 
 /* Button A - Green */
-.custom .a {
-  background: radial-gradient(circle, #4ade80 0%, #22c55e 100%);
-  left: 4.25vw;
-  bottom: 0;
+.controller.custom .a {
+  background: radial-gradient(circle, #4ade80 0%, #22c55e 100%) !important;
+  left: 4.25vw !important;
+  bottom: 0 !important;
 }
-.custom .a::after {
-  content: 'A';
+.controller.custom .a::after {
+  content: 'A' !important;
 }
-.custom .a.pressed {
-  background: radial-gradient(circle, #22c55e 0%, #16a34a 100%);
+.controller.custom .a.pressed {
+  background: radial-gradient(circle, #22c55e 0%, #16a34a 100%) !important;
 }
 
 /* Button B - Red */
-.custom .b {
-  background: radial-gradient(circle, #ff4444 0%, #cc0000 100%);
-  right: 0;
-  top: 4.25vw;
+.controller.custom .b {
+  background: radial-gradient(circle, #ff4444 0%, #cc0000 100%) !important;
+  right: 0 !important;
+  top: 4.25vw !important;
 }
-.custom .b::after {
-  content: 'B';
+.controller.custom .b::after {
+  content: 'B' !important;
 }
-.custom .b.pressed {
-  background: radial-gradient(circle, #cc0000 0%, #990000 100%);
+.controller.custom .b.pressed {
+  background: radial-gradient(circle, #cc0000 0%, #990000 100%) !important;
 }
 
 /* Button X - Blue */
-.custom .x {
-  background: radial-gradient(circle, #60a5fa 0%, #3b82f6 100%);
-  left: 0;
-  top: 4.25vw;
+.controller.custom .x {
+  background: radial-gradient(circle, #60a5fa 0%, #3b82f6 100%) !important;
+  left: 0 !important;
+  top: 4.25vw !important;
 }
-.custom .x::after {
-  content: 'X';
+.controller.custom .x::after {
+  content: 'X' !important;
 }
-.custom .x.pressed {
-  background: radial-gradient(circle, #3b82f6 0%, #2563eb 100%);
+.controller.custom .x.pressed {
+  background: radial-gradient(circle, #3b82f6 0%, #2563eb 100%) !important;
 }
 
 /* Button Y - Yellow */
-.custom .y {
-  background: radial-gradient(circle, #fbbf24 0%, #f59e0b 100%);
-  left: 4.25vw;
-  top: 0;
+.controller.custom .y {
+  background: radial-gradient(circle, #fbbf24 0%, #f59e0b 100%) !important;
+  left: 4.25vw !important;
+  top: 0 !important;
 }
-.custom .y::after {
-  content: 'Y';
+.controller.custom .y::after {
+  content: 'Y' !important;
 }
-.custom .y.pressed {
-  background: radial-gradient(circle, #f59e0b 0%, #d97706 100%);
+.controller.custom .y.pressed {
+  background: radial-gradient(circle, #f59e0b 0%, #d97706 100%) !important;
 }
 
 /* View & Menu Buttons (Back & Start) */
-.custom .arrows {
-  position: absolute;
-  width: 24vw;
-  height: 3.5vw;
-  left: 38vw;
-  top: 22vw;
+.controller.custom .arrows {
+  position: absolute !important;
+  width: 24vw !important;
+  height: 3.5vw !important;
+  left: 38vw !important;
+  top: 22vw !important;
 }
 
-.custom .back, .custom .start {
-  position: absolute;
-  width: 3vw;
-  height: 3.5vw;
-  background: linear-gradient(135deg, #3a3a3a 0%, #2a2a2a 100%);
-  border-radius: 0.5vw;
-  transition: all 0.1s;
+.controller.custom .back, .controller.custom .start {
+  position: absolute !important;
+  width: 3vw !important;
+  height: 3.5vw !important;
+  background: linear-gradient(135deg, #3a3a3a 0%, #2a2a2a 100%) !important;
+  border-radius: 0.5vw !important;
+  transition: all 0.1s !important;
 }
 
-.custom .back {
-  left: 0;
+.controller.custom .back {
+  left: 0 !important;
 }
 
-.custom .start {
-  right: 0;
+.controller.custom .start {
+  right: 0 !important;
 }
 
-.custom .back.pressed, .custom .start.pressed {
-  background: linear-gradient(135deg, #ff0066 0%, #990040 100%);
-  box-shadow: 0 0 1vw rgba(255, 0, 102, 0.8);
+.controller.custom .back.pressed, .controller.custom .start.pressed {
+  background: linear-gradient(135deg, #ff0066 0%, #990040 100%) !important;
+  box-shadow: 0 0 1vw rgba(255, 0, 102, 0.8) !important;
 }
 
 /* Analog Sticks */
-.custom .sticks {
-  position: absolute;
-  width: 42vw;
-  height: 11vw;
-  left: 29vw;
-  top: 38vw;
+.controller.custom .sticks {
+  position: absolute !important;
+  width: 42vw !important;
+  height: 11vw !important;
+  left: 29vw !important;
+  top: 38vw !important;
 }
 
-.custom .stick {
-  position: absolute;
-  width: 11vw;
-  height: 11vw;
-  background: radial-gradient(circle, #4a4a4a 0%, #2a2a2a 60%, #1a1a1a 100%);
-  border-radius: 50%;
-  border: 0.4vw solid #1a1a1a;
-  transition: all 0.1s;
+.controller.custom .stick {
+  position: absolute !important;
+  width: 11vw !important;
+  height: 11vw !important;
+  background: radial-gradient(circle, #4a4a4a 0%, #2a2a2a 60%, #1a1a1a 100%) !important;
+  border-radius: 50% !important;
+  border: 0.4vw solid #1a1a1a !important;
+  transition: all 0.1s !important;
 }
 
-.custom .stick::before {
-  content: '';
-  position: absolute;
-  width: 60%;
-  height: 60%;
-  top: 20%;
-  left: 20%;
+.controller.custom .stick::before {
+  content: '' !important;
+  position: absolute !important;
+  width: 60% !important;
+  height: 60% !important;
+  top: 20% !important;
+  left: 20% !important;
   background: repeating-linear-gradient(
     45deg,
     #5a5a5a,
     #5a5a5a 0.2vw,
     #4a4a4a 0.2vw,
     #4a4a4a 0.4vw
-  );
-  border-radius: 50%;
+  ) !important;
+  border-radius: 50% !important;
 }
 
-.custom .stick.pressed {
-  background: radial-gradient(circle, #ff0066 0%, #cc0052 60%, #990040 100%);
-  box-shadow: 0 0 2vw rgba(255, 0, 102, 0.8);
+.controller.custom .stick.pressed {
+  background: radial-gradient(circle, #ff0066 0%, #cc0052 60%, #990040 100%) !important;
+  box-shadow: 0 0 2vw rgba(255, 0, 102, 0.8) !important;
 }
 
-.custom .stick.left {
-  left: 0;
+.controller.custom .stick.left {
+  left: 0 !important;
 }
 
-.custom .stick.right {
-  right: 0;
+.controller.custom .stick.right {
+  right: 0 !important;
 }
 
 /* Xbox Logo Button */
-.custom .meta {
-  position: absolute;
-  width: 6vw;
-  height: 6vw;
-  left: 47vw;
-  top: 28vw;
-  background: radial-gradient(circle, #4a4a4a 0%, #2a2a2a 100%);
-  border-radius: 50%;
-  border: 0.3vw solid #1a1a1a;
-  transition: all 0.1s;
+.controller.custom .meta {
+  position: absolute !important;
+  width: 6vw !important;
+  height: 6vw !important;
+  left: 47vw !important;
+  top: 28vw !important;
+  background: radial-gradient(circle, #4a4a4a 0%, #2a2a2a 100%) !important;
+  border-radius: 50% !important;
+  border: 0.3vw solid #1a1a1a !important;
+  transition: all 0.1s !important;
 }
 
-.custom .meta::after {
-  content: '';
-  position: absolute;
-  width: 70%;
-  height: 70%;
-  top: 15%;
-  left: 15%;
-  background: linear-gradient(135deg, #107c10 0%, #0e6b0e 100%);
-  border-radius: 50%;
-  box-shadow: inset 0 0 0.5vw rgba(0, 0, 0, 0.5);
+.controller.custom .meta::after {
+  content: '' !important;
+  position: absolute !important;
+  width: 70% !important;
+  height: 70% !important;
+  top: 15% !important;
+  left: 15% !important;
+  background: linear-gradient(135deg, #107c10 0%, #0e6b0e 100%) !important;
+  border-radius: 50% !important;
+  box-shadow: inset 0 0 0.5vw rgba(0, 0, 0, 0.5) !important;
 }
 
-.custom .meta.pressed {
-  background: radial-gradient(circle, #107c10 0%, #0e6b0e 100%);
-  box-shadow: 0 0 2vw rgba(16, 124, 16, 0.8);
+.controller.custom .meta.pressed {
+  background: radial-gradient(circle, #107c10 0%, #0e6b0e 100%) !important;
+  box-shadow: 0 0 2vw rgba(16, 124, 16, 0.8) !important;
 }
 
-.custom .meta.pressed::after {
-  background: linear-gradient(135deg, #4ade80 0%, #22c55e 100%);
+.controller.custom .meta.pressed::after {
+  background: linear-gradient(135deg, #4ade80 0%, #22c55e 100%) !important;
 }
 
 /* ROG Logo / Extra Buttons (if mapped) */
-.custom .touchpad {
-  position: absolute;
-  width: 8vw;
-  height: 4vw;
-  left: 46vw;
-  top: 16vw;
-  background: linear-gradient(135deg, #ff0066 0%, #cc0052 50%, #990040 100%);
-  border-radius: 0.5vw;
-  opacity: 0.6;
-  transition: all 0.1s;
+.controller.custom .touchpad {
+  position: absolute !important;
+  width: 8vw !important;
+  height: 4vw !important;
+  left: 46vw !important;
+  top: 16vw !important;
+  background: linear-gradient(135deg, #ff0066 0%, #cc0052 50%, #990040 100%) !important;
+  border-radius: 0.5vw !important;
+  opacity: 0.6 !important;
+  transition: all 0.1s !important;
 }
 
-.custom .touchpad::after {
-  content: 'ROG';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.5vw;
-  font-weight: bold;
-  color: #ffffff;
-  text-shadow: 0 0 0.5vw rgba(255, 0, 102, 0.8);
+.controller.custom .touchpad::after {
+  content: 'ROG' !important;
+  position: absolute !important;
+  width: 100% !important;
+  height: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 1.5vw !important;
+  font-weight: bold !important;
+  color: #ffffff !important;
+  text-shadow: 0 0 0.5vw rgba(255, 0, 102, 0.8) !important;
 }
 
-.custom .touchpad.pressed {
-  opacity: 1;
-  box-shadow: 0 0 2vw rgba(255, 0, 102, 1);
+.controller.custom .touchpad.pressed {
+  opacity: 1 !important;
+  box-shadow: 0 0 2vw rgba(255, 0, 102, 1) !important;
 }
 
 /* Textured Grip Areas (visual effect) */
-.custom.controller::before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
+.controller.custom.controller::before {
+  content: '' !important;
+  position: absolute !important;
+  width: 100% !important;
+  height: 100% !important;
   background: 
     radial-gradient(circle at 20% 70%, rgba(90, 90, 90, 0.3) 0%, transparent 15%),
-    radial-gradient(circle at 80% 70%, rgba(90, 90, 90, 0.3) 0%, transparent 15%);
-  pointer-events: none;
+    radial-gradient(circle at 80% 70%, rgba(90, 90, 90, 0.3) 0%, transparent 15%) !important;
+  pointer-events: none !important;
 }
 
 /* RGB Lighting Effect (quadrant for player indicator) */
-.custom .quadrant {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  pointer-events: none;
-  opacity: 0.15;
-  mix-blend-mode: screen;
+.controller.custom .quadrant {
+  position: absolute !important;
+  width: 100% !important;
+  height: 100% !important;
+  top: 0 !important;
+  left: 0 !important;
+  pointer-events: none !important;
+  opacity: 0.15 !important;
+  mix-blend-mode: screen !important;
 }
 
-.custom .quadrant.p0 {
-  background: radial-gradient(circle at 50% 20%, rgba(16, 124, 16, 0.8) 0%, transparent 40%);
+.controller.custom .quadrant.p0 {
+  background: radial-gradient(circle at 50% 20%, rgba(16, 124, 16, 0.8) 0%, transparent 40%) !important;
 }
 
-.custom .quadrant.p1 {
-  background: radial-gradient(circle at 50% 20%, rgba(255, 0, 102, 0.8) 0%, transparent 40%);
+.controller.custom .quadrant.p1 {
+  background: radial-gradient(circle at 50% 20%, rgba(255, 0, 102, 0.8) 0%, transparent 40%) !important;
 }
 
-.custom .quadrant.p2 {
-  background: radial-gradient(circle at 50% 20%, rgba(59, 130, 246, 0.8) 0%, transparent 40%);
+.controller.custom .quadrant.p2 {
+  background: radial-gradient(circle at 50% 20%, rgba(59, 130, 246, 0.8) 0%, transparent 40%) !important;
 }
 
-.custom .quadrant.p3 {
-  background: radial-gradient(circle at 50% 20%, rgba(251, 191, 36, 0.8) 0%, transparent 40%);
+.controller.custom .quadrant.p3 {
+  background: radial-gradient(circle at 50% 20%, rgba(251, 191, 36, 0.8) 0%, transparent 40%) !important;
 }
 
 /* Additional paddle buttons (M1, M2, M3, M4) - if supported */
-.custom .bumper.paddle1, .custom .bumper.paddle2 {
-  position: absolute;
-  width: 3vw;
-  height: 6vw;
-  background: linear-gradient(135deg, #3a3a3a 0%, #2a2a2a 100%);
-  border-radius: 0.5vw;
-  top: 35vw;
+.controller.custom .bumper.paddle1, .controller.custom .bumper.paddle2 {
+  position: absolute !important;
+  width: 3vw !important;
+  height: 6vw !important;
+  background: linear-gradient(135deg, #3a3a3a 0%, #2a2a2a 100%) !important;
+  border-radius: 0.5vw !important;
+  top: 35vw !important;
 }
 
-.custom .bumper.paddle1 {
-  left: 8vw;
+.controller.custom .bumper.paddle1 {
+  left: 8vw !important;
 }
 
-.custom .bumper.paddle2 {
-  right: 8vw;
+.controller.custom .bumper.paddle2 {
+  right: 8vw !important;
 }
 
-.custom .bumper.paddle1.pressed, .custom .bumper.paddle2.pressed {
-  background: linear-gradient(135deg, #ff0066 0%, #990040 100%);
-  box-shadow: 0 0 1vw rgba(255, 0, 102, 0.8);
+.controller.custom .bumper.paddle1.pressed, .controller.custom .bumper.paddle2.pressed {
+  background: linear-gradient(135deg, #ff0066 0%, #990040 100%) !important;
+  box-shadow: 0 0 1vw rgba(255, 0, 102, 0.8) !important;
 }
 
 /* Responsive adjustments for different viewport sizes */
 @media (max-width: 768px) {
-  .custom .button::after {
-    font-size: 3vw;
+  .controller.custom .button::after {
+    font-size: 3vw !important;
   }
   
-  .custom .touchpad::after {
-    font-size: 2.5vw;
+  .controller.custom .touchpad::after {
+    font-size: 2.5vw !important;
   }
 }
